@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prova- Primeiro Semestre</title>
+<!-- css -->
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Trabalho primeiro Semestre</h2>
+    </div>
+    <form id="form" class="form">
+      <div class="header">
+        <h2>Fato ou boato?</h2>
+      </div>
+      <div class="form-control">
+        <select id="fact">
+          <option selected>-- Select --</option>
+          <option>Fato</option>
+          <option>Boato</option>
+          <option>Random</option>
+        </select>
+      </div>
+      <div class="header">
+        <h2>Digite 3 números</h2>
+      </div>
+      <!-- manipulating numbers -->
+      <div class="form-control">
+        <label>Primeiro número</label>
+        <input type="text" placeholder="Primeiro número" id="number1">
+        <small>Número em branco</small>
+      </div>
+      <div class="form-control">
+        <label>Segundo número</label>
+        <input type="number" placeholder="Segundo número" id="number2">
+        <small>Número em branco</small>
+      </div>
+      <div class="form-control">
+        <label>Terceiro número</label>
+        <input type="number" placeholder="Terceiro número" id="number3">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Número em branco</small>
+      </div>
+      <!-- input of Biggest number -->
+      <div class="form-control">
+        <label>Maior número é:</label>
+        <input type="number" placeholder="Maior número" id="chosenNumberId">
+        <small>Número em branco</small>
+      </div>
+      <!-- input of sentence after choose  -->
+      <div>
+        <p id="result">?</p>
+        <textarea id="frase" name="text" rows="6" cols="37" wrap="soft"> </textarea>
+      </div>
+      <button>Fato ou Boato</button>
+    </form>
+  </div>
+
+<!-- Js scripts -->
+<script src="./scripts/validFactOrRumor.js"></script>
+
+</body>
+
+</html>
